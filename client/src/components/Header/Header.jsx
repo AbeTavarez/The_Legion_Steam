@@ -15,7 +15,7 @@ export default function Header() {
         </ul>
       </nav>
       <div className="img-container">
-        <img src={car_img} alt="header-image" />
+        <img />
       </div>
 
       <div className="logo">
