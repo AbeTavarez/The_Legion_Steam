@@ -3,7 +3,40 @@
   color: white;
   font-size: 22px;
 }
+.ourstory {
+  display: flex;
+}
+.ourstory-img {
+  display: flex;
+  justify-content: baseline;
+}
+.ourstory-img img {
+  width: 800px;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  letter-spacing: 1px;
+}
 
-.mission-container {
-  padding-top: 50px;
+.mission-session {
+  display: flex;
+}
+.mission {
+  letter-spacing: 1px;
+}
+.washer-img img {
+  width: 400px;
+  padding-left: 200px;
+}
+.rev {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.rev-one {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }

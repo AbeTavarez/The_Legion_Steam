@@ -7,7 +7,7 @@
 .header-container img {
   width: 100%;
   height: 500px;
-  background-image: url("../../assets/images/car_img.jpg");
+  background-image: url("../../assets/images/electric-blue.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 40% 60%;
@@ -25,10 +25,11 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
+  width: inherit;
 }
 .s-link {
   color: #00cc00;
+  text-decoration: none;
   /* color: #0892d0; */
 }
 .logo {
@@ -40,6 +41,11 @@ nav {
   color: #0892d0;
   /* color: #00cc00; */
   animation: logo-flash infinite 3s ease;
+}
+.service {
+  text-align: center;
+  color: white;
+  padding-top: 15px;
 }
 @keyframes logo-flash {
   from {

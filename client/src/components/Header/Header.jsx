@@ -21,6 +21,9 @@ export default function Header() {
       <div className="logo">
         <div>The Legion Steam</div>
       </div>
+      <div className="service">
+        <h2>Professional Steam Cleaning with Superior Results.</h2>
+      </div>
     </div>
   );
 }
