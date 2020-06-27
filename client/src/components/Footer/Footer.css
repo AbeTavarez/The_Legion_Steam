@@ -31,3 +31,24 @@
   justify-content: space-around;
   padding-bottom: 10px;
 }
+
+@media (max-width: 415px) {
+  .footer-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .socialmedia-items {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 325px) {
+  .footer-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .socialmedia-items {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

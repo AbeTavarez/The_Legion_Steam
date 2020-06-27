@@ -8,7 +8,7 @@ export default class Main extends Component {
   render() {
     return (
       <div className="main-container">
-        <div className="ourstory">
+        <div className="ourstory" id={"home-section"}>
           <div className="ourstory-img">
             <img src={parking_img} alt="store-front" />
           </div>
@@ -32,11 +32,11 @@ export default class Main extends Component {
         <hr />
         {/* MISSION SECTION|||||||||||||||||||||||||||||||||||||| */}
         <div className="mission-session">
-          <div className="mission">
+          <div className="mission" id={"about-section"}>
             <div className="rev">
               <h4>Our Mission</h4>
               <p>
-                At The Legion Steam we focused 100% on customer satisfaction
+                At The Legion Steam we focused 100% on customer satisfaction.
               </p>
               <p>
                 That's the reason we train over and over again to make sure we
@@ -49,7 +49,7 @@ export default class Main extends Component {
           </div>
         </div>
         <hr />
-        <div className="contact-session">
+        <div className="contact-section" id={"contact-section"}>
           <h4>Contact Us</h4>
           <p>
             Dalni R. <span>(917) 733 - 3013</span>

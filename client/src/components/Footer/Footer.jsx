@@ -19,10 +19,12 @@ export default function Footer() {
         </div>
       </div>
 
-      <div class="socialmedia">
+      <div className="socialmedia">
         <h4>Social Media</h4>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram"></i>
+        <div className="socialmedia-items">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
       </div>
       <div className="dev">
         <h4>Development</h4>
