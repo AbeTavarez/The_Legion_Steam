@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
 
 import parking_img from "../../assets/images/parking.jpg";
 import washer from "../../assets/images/washer.jpg";
@@ -11,7 +10,7 @@ export default class Main extends Component {
       <div className="main-container">
         <div className="ourstory">
           <div className="ourstory-img">
-            <img src={parking_img} />
+            <img src={parking_img} alt="store-front" />
           </div>
           <div className="story">
             <h4>Our Story</h4>
@@ -31,25 +30,22 @@ export default class Main extends Component {
         </div>
 
         <hr />
-        {/* Mission Session |||||||||||||||||||||||||||||||||||||| */}
+        {/* MISSION SECTION|||||||||||||||||||||||||||||||||||||| */}
         <div className="mission-session">
           <div className="mission">
             <div className="rev">
               <h4>Our Mission</h4>
-            </div>
-            <div className="rev-one">
               <p>
-                At The Legion Steam we focused 100% on customer satisfaction.
-                <br />
-                <span>
-                  That's the reason we train over and over agian to make sure we
-                  get it right and that your expectations are meet.
-                </span>
+                At The Legion Steam we focused 100% on customer satisfaction
+              </p>
+              <p>
+                That's the reason we train over and over again to make sure we
+                get it right and that your expectations are meet.
               </p>
             </div>
           </div>
           <div className="washer-img">
-            <img src={washer} />
+            <img src={washer} alt="carwash-worker" />
           </div>
         </div>
         <hr />

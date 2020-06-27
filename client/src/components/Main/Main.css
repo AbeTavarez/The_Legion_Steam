@@ -1,7 +1,9 @@
 .main-container {
+  text-align: center;
   padding: 110px;
   color: white;
   font-size: 22px;
+  padding-top: 100px;
 }
 .ourstory {
   display: flex;
@@ -11,7 +13,9 @@
   justify-content: baseline;
 }
 .ourstory-img img {
-  width: 800px;
+  max-width: 100%;
+  box-shadow: 5px 5px 50px lightgray;
+  border-radius: 0.9%;
 }
 .story {
   display: flex;
@@ -19,24 +23,38 @@
   padding-left: 20px;
   letter-spacing: 1px;
 }
+/* MISSION SECTION */
 
 .mission-session {
   display: flex;
 }
 .mission {
   letter-spacing: 1px;
-}
-.washer-img img {
-  width: 400px;
-  padding-left: 200px;
-}
-.rev {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: flex-end;
   padding-right: 20px;
 }
-.rev-one {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+.washer-img {
+  /* display: flex;
+  justify-content: flex-end; */
+}
+.washer-img img {
+  max-width: 100%;
+  height: 700px;
+  box-shadow: 5px 5px 50px lightgray;
+  border-radius: 0.9%;
+}
+.mission {
+  /* display: flex;
+  justify-content: flex-end; */
+}
+/* MEDIA QUERIES */
+@media (max-width: 1020) {
+  .washer-img img {
+    max-width: 100%;
+    /* height: 1000px; */
+    box-shadow: 5px 5px 50px lightgray;
+    border-radius: 0.9%;
+  }
 }
