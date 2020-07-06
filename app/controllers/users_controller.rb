@@ -6,12 +6,12 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    render json: @users
+    render json: @users, include: :vehicles, status: :ok
   end
 
   # GET /users/1
   def show
-    render json: @user
+    render json: @user.to_json(include: { vehicles: { include: :jobs } })
   end
 
   # POST /users
