@@ -1,5 +1,6 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :update, :destroy]
+  before_action :authorize_request
 
   # GET /jobs
   def index
@@ -16,9 +17,10 @@ class JobsController < ApplicationController
   # POST /jobs
   def create
     @job = Job.new(job_params)
+    @job.vehicle = Vehicle.find(params[:vehicle_id])
 
     if @job.save
-      render json: @job, status: :created, location: @job
+      render json: @job, status: :created
     else
       render json: @job.errors, status: :unprocessable_entity
     end

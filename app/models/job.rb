@@ -1,5 +1,5 @@
 class Job < ApplicationRecord
-    belongs_to: :vehicle
+    belongs_to :vehicle
 
     validates :location, presence: true
     validates :date, presence: true

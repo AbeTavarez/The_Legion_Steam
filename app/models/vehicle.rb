@@ -1,6 +1,6 @@
 class Vehicle < ApplicationRecord
-  belongs_to: :user
-  has_many: :jobs
+  belongs_to :user
+  has_many :jobs
 
   validates :brand, presence: true
   validates :model, presence: true

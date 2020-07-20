@@ -1,5 +1,6 @@
 class VehiclesController < ApplicationController
   before_action :set_vehicle, only: [:show, :update, :destroy]
+  before_action :authorize_request
 
   # GET /vehicles
   def index
@@ -16,9 +17,10 @@ class VehiclesController < ApplicationController
   # POST /vehicles
   def create
     @vehicle = Vehicle.new(vehicle_params)
+    @vehicle.user = @current_user
 
     if @vehicle.save
-      render json: @vehicle, status: :created, location: @vehicle
+      render json: @vehicle, status: :created
     else
       render json: @vehicle.errors, status: :unprocessable_entity
     end

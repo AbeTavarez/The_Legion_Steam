@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
-  before_action :authorize_request, except: :create
+  before_action :authorize_request, except: [:create, :index, :show]
+
 
   # GET /users
   def index
@@ -20,7 +21,7 @@ class UsersController < ApplicationController
 
     if @user.save
       @token = encode({user_id: @user.id, username: @user.username})
-      render json: {user: @user, tokem: @token}, status: :created, location: @user
+      render json: {user: @user, tokem: @token}, status: :created
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
 
   # PATCH/PUT /users/1
   def update
-    if @user.update(user_params)
+    if @current_user.id == @user.id && @user.update(user_params)
       render json: @user
     else
       render json: @user.errors, status: :unprocessable_entity
