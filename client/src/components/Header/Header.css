@@ -59,7 +59,7 @@ nav {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 3200px) {
+@media (max-width: 1200px) {
   .logo {
     font-size: 10px;
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import "./Header.css";
 
@@ -16,6 +17,9 @@ export default function Header() {
           <a href="/#contact-section" className="s-link">
             Contact
           </a>
+          <NavLink to="/user/signup" className="s-link">
+            Sign Up
+          </NavLink>
         </ul>
       </nav>
       <div className="img-container">
