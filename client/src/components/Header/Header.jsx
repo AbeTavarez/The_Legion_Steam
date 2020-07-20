@@ -8,9 +8,9 @@ export default function Header() {
     <div className="header-container">
       <nav>
         <ul className="nav-bar">
-          <a href="#home-section" className="s-link">
+          <NavLink to="/" className="s-link">
             Home
-          </a>
+          </NavLink>
           <a href="/#about-section" className="s-link">
             About
           </a>

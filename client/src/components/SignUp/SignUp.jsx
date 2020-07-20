@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
+import "./SignUp.css";
 export default class SignUp extends Component {
   state = {
     username: "",
@@ -24,8 +25,8 @@ export default class SignUp extends Component {
         className="form-container"
         onSubmit={(e) => {
           e.preventDefault();
-          handleRegisterSubmit(this.state);
-          history.push("/");
+          handleSignupSubmit(this.state);
+          // history.push("/");
           this.setState({
             username: "",
             email: "",
@@ -35,7 +36,7 @@ export default class SignUp extends Component {
       >
         <h3>Register</h3>
         <label htmlFor="username">
-          username:
+          Username:
           <input
             id="username"
             type="text"
@@ -46,7 +47,7 @@ export default class SignUp extends Component {
         </label>
         <br />
         <label htmlFor="email">
-          email:
+          Email:
           <input
             id="email"
             type="text"
@@ -57,7 +58,7 @@ export default class SignUp extends Component {
         </label>
         <br />
         <label htmlFor="password">
-          password:
+          Password:
           <input
             id="password"
             type="password"

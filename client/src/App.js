@@ -1,7 +1,12 @@
 import React, { Component } from "react";
-import { Route, Router } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
-import { registerUser } from "./services/auth";
+import {
+  registerUser,
+  loginUser,
+  removeToken,
+  verifyUser,
+} from "./services/auth";
 
 import "./App.css";
 import Header from "./components/Header/Header";
@@ -47,7 +52,9 @@ class App extends Component {
   render() {
     return (
       <div className="App-header">
-        <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/" render={() => <Main />} />
           <Route
             exact
             path="/user/signup"
@@ -55,19 +62,9 @@ class App extends Component {
               <SignUp {...props} handleSignupSubmit={this.handleSignupSubmit} />
             )}
           />
-
           <Route exact path="/profile" />
-        </Router>
-
-        <header className="">
-          <Header />
-        </header>
-        <main>
-          <Main />
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        </Switch>
+        <Footer />
       </div>
     );
   }
