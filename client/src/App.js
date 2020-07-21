@@ -29,7 +29,7 @@ class App extends Component {
     this.setState({ currentUser });
   };
 
-  handleSingupSubmit = async (registerData) => {
+  handleSignupSubmit = async (registerData) => {
     const currentUser = await registerUser(registerData);
     this.setState({ currentUser });
   };
@@ -62,7 +62,7 @@ class App extends Component {
               <SignUp {...props} handleSignupSubmit={this.handleSignupSubmit} />
             )}
           />
-          <Route exact path="/profile" />
+          <Route exact path="/user/profile" />
         </Switch>
         <Footer />
       </div>

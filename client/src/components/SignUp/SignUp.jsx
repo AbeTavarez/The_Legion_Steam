@@ -19,14 +19,14 @@ export default class SignUp extends Component {
 
   render() {
     const { username, email, password } = this.state;
-    const { handleSignupSubmit, histoy } = this.props;
+    const { handleSignupSubmit, history } = this.props;
     return (
       <form
         className="form-container"
         onSubmit={(e) => {
           e.preventDefault();
           handleSignupSubmit(this.state);
-          // history.push("/");
+          history.push("/user/profile");
           this.setState({
             username: "",
             email: "",
