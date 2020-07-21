@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import { Link, NavLink } from "react-router-dom";
-import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import "./Signin.css";
 
-import "./SignUp.css";
-export default class SignUp extends Component {
+export default class Signin extends Component {
   state = {
     username: "",
-    email: "",
     password: "",
   };
 
@@ -18,23 +16,22 @@ export default class SignUp extends Component {
   };
 
   render() {
-    const { username, email, password } = this.state;
-    const { handleSignupSubmit, history } = this.props;
+    const { username, password } = this.state;
+    const { handleLoginSubmit, history } = this.props;
     return (
       <form
         className="form-container"
         onSubmit={(e) => {
           e.preventDefault();
-          handleSignupSubmit(this.state);
-          history.push("/user/profile");
+          handleLoginSubmit(this.state);
+          history.push("/");
           this.setState({
             username: "",
-            email: "",
             password: "",
           });
         }}
       >
-        <h3>Register</h3>
+        <h3>Login</h3>
         <label htmlFor="username">
           Username:
           <input
@@ -43,19 +40,6 @@ export default class SignUp extends Component {
             name="username"
             value={username}
             onChange={this.handleChange}
-            placeholder="Create an username"
-          />
-        </label>
-        <br />
-        <label htmlFor="email">
-          Email:
-          <input
-            id="email"
-            type="text"
-            name="email"
-            value={email}
-            onChange={this.handleChange}
-            placeholder="Enter your email"
           />
         </label>
         <br />
@@ -67,15 +51,16 @@ export default class SignUp extends Component {
             name="password"
             value={password}
             onChange={this.handleChange}
-            placeholder="Six or more characters"
           />
         </label>
         <br />
-        <button className="submit-btn">Submit</button>
-        <p>
-          Already have an account?{" "}
-          <NavLink to="/user/signin">Login here</NavLink>
-        </p>
+        <button type="submit" className="login-submit-btn">
+          Submit
+        </button>
+        <hr />
+        <h3>Create a new account</h3>
+        <Link to="/user/signup">Register</Link>
+        <hr />
       </form>
     );
   }

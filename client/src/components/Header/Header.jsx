@@ -18,7 +18,10 @@ export default function Header() {
             Contact
           </a>
           <NavLink to="/user/signup" className="s-link">
-            Sign Up
+            Register
+          </NavLink>
+          <NavLink to="/user/signin" className="s-link">
+            LogIn
           </NavLink>
         </ul>
       </nav>

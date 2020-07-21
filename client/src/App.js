@@ -13,6 +13,7 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import SignUp from "./components/SignUp/SignUp";
+import SignIn from "./components/SignIn/Signin";
 
 class App extends Component {
   state = {
@@ -60,6 +61,13 @@ class App extends Component {
             path="/user/signup"
             render={(props) => (
               <SignUp {...props} handleSignupSubmit={this.handleSignupSubmit} />
+            )}
+          />
+          <Route
+            exact
+            path="user/signin"
+            render={(props) => (
+              <SignIn {...props} handleLoginSubmit={this.handleLoginSubmit} />
             )}
           />
           <Route exact path="/user/profile" />
