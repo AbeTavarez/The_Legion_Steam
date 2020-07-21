@@ -20,13 +20,12 @@
   text-align: center;
   margin-bottom: 100px;
 }
-input {
+input,
+label {
   width: 250px;
   height: 35px;
 }
 label {
-  width: 250px;
-  height: 35px;
   margin: 10px;
 }
 .submit-btn {

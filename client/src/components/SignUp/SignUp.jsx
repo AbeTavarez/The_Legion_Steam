@@ -43,7 +43,7 @@ export default class SignUp extends Component {
             name="username"
             value={username}
             onChange={this.handleChange}
-            placeholder="Create an username"
+            placeholder="Choose an username"
           />
         </label>
         <br />

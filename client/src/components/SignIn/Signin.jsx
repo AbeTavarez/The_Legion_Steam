@@ -57,10 +57,14 @@ export default class Signin extends Component {
         <button type="submit" className="login-submit-btn">
           Submit
         </button>
-        <hr />
-        <h3>Create a new account</h3>
-        <Link to="/user/signup">Register</Link>
-        <hr />
+
+        <p>
+          Not register ?{" "}
+          <span>
+            {" "}
+            <Link to="/user/signup">Register Here</Link>
+          </span>
+        </p>
       </form>
     );
   }

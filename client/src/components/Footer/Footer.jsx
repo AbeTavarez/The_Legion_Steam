@@ -22,10 +22,13 @@ export default function Footer() {
       <div className="socialmedia">
         <h4>Social Media</h4>
         <div className="socialmedia-items">
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-instagram"></i>
+          <i className="fab fa-facebook-square fa-3x icons"></i>
+          <a href="https://www.instagram.com/thelegionsteam/?hl=en">
+            <i className="fab fa-instagram fa-3x icons"></i>
+          </a>
         </div>
       </div>
+
       <div className="dev">
         <h4>Development</h4>
         <p>Version 1.0</p>
