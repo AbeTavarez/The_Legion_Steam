@@ -67,11 +67,7 @@ class App extends Component {
             exact
             path="/user/signin"
             render={(props) => (
-              <SignIn
-                {...props}
-                handleLoginSubmit={this.handleLoginSubmit}
-                currentUser={this.state.currentUser}
-              />
+              <SignIn {...props} handleLoginSubmit={this.handleLoginSubmit} />
             )}
           />
           <Route exact path="/user/profile" />

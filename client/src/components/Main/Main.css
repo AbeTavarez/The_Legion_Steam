@@ -26,17 +26,17 @@
 /* MISSION SECTION */
 
 .mission-session {
-  display: flex;
+  margin-top: 100px;
 }
 .mission {
-  letter-spacing: 1px;
+  /* letter-spacing: 1px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
-  padding-right: 20px;
+  padding-right: 20px; */
 }
 .washer-img {
-  display: flex;
+  /* display: flex; */
 }
 .washer-img img {
   max-width: 100%;
