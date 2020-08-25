@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-
 import {
   registerUser,
   loginUser,
   removeToken,
   verifyUser,
 } from "./services/auth";
-
 import "./App.css";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
