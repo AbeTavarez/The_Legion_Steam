@@ -38,20 +38,11 @@ nav {
   font-size: 70px;
   color: #0892d0;
   /* color: #00cc00; */
-  animation: logo-flash infinite 2s ease;
 }
 .service {
   text-align: center;
   color: white;
   padding-top: 15px;
-}
-@keyframes logo-flash {
-  from {
-    color: #0892d0;
-  }
-  to {
-    color: #00cc00;
-  }
 }
 
 .nav-links {
