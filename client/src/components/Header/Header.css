@@ -16,15 +16,16 @@
 nav {
   background-color: #282c34;
   font-family: "Notable";
-  font-size: 42px;
+  font-size: 32px;
 }
 
 .nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: inherit;
+  width: 100%;
 }
+
 .s-link {
   color: #00cc00;
   text-decoration: none;
@@ -76,14 +77,15 @@ nav {
 
 @media (max-width: 425px) {
   .s-link {
-    font-size: 14px;
+    font-size: 15px;
+    padding: 5px;
   }
   .header-container img {
     width: 100%;
     height: 200px;
   }
-  nav {
-    padding-right: 25px;
+  .nav-bar {
+    padding-left: 0;
   }
 
   .service {
@@ -92,25 +94,19 @@ nav {
 }
 @media (max-width: 375px) {
   .s-link {
-    font-size: 10px;
+    font-size: 14px;
   }
-  .header-container img {
-    /* width: 100%;
-    height: 200px; */
-  }
+
   .logo {
     font-size: 28px;
   }
 }
 @media (max-width: 320px) {
-  .header-container img {
-    /* width: 100%;
-    height: 200px; */
+  .s-link {
+    font-size: 10px;
   }
+
   .logo {
     font-size: 24px;
-  }
-  .service {
-    /* font-size: 10px; */
   }
 }
