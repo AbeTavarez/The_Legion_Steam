@@ -33,7 +33,7 @@ export default function Footer() {
         <h4>Development</h4>
         <p>Version 1.0</p>
         <p>Developer:</p>
-        <div> www.abrahamtavarez.dev</div>
+        <div>abrahamtavarez.dev</div>
       </div>
     </div>
   );

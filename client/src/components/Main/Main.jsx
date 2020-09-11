@@ -23,8 +23,8 @@ export default class Main extends Component {
             </p>
             <p>
               So we decided that there will be no more waiting line, no more
-              high prices. no more wasting time or unproffesional treatment to
-              out cars.
+              high prices, no more wasting time or unproffesional treatment to
+              our cars.
             </p>
           </div>
         </div>

@@ -33,19 +33,21 @@ a {
   color: white;
 }
 .dev {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   .footer-container {
-    flex-direction: column;
-    height: auto;
-  }
-  .socialmedia-items {
     display: flex;
     justify-content: space-evenly;
+    height: auto;
+    padding: 10px;
+  }
+  .socialmedia {
+    padding-top: 3px;
+    padding-right: 35px;
   }
 }
 @media (max-width: 325px) {
